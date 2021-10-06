@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/TodoRollixer/static/css/main.9f17bd41.chunk.css",
+    "main.js": "/TodoRollixer/static/js/main.07081e9f.chunk.js",
+    "main.js.map": "/TodoRollixer/static/js/main.07081e9f.chunk.js.map",
+    "runtime-main.js": "/TodoRollixer/static/js/runtime-main.fc744a87.js",
+    "runtime-main.js.map": "/TodoRollixer/static/js/runtime-main.fc744a87.js.map",
+    "static/js/2.d530286c.chunk.js": "/TodoRollixer/static/js/2.d530286c.chunk.js",
+    "static/js/2.d530286c.chunk.js.map": "/TodoRollixer/static/js/2.d530286c.chunk.js.map",
+    "index.html": "/TodoRollixer/index.html",
+    "static/css/main.9f17bd41.chunk.css.map": "/TodoRollixer/static/css/main.9f17bd41.chunk.css.map",
+    "static/js/2.d530286c.chunk.js.LICENSE.txt": "/TodoRollixer/static/js/2.d530286c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fc744a87.js",
+    "static/js/2.d530286c.chunk.js",
+    "static/css/main.9f17bd41.chunk.css",
+    "static/js/main.07081e9f.chunk.js"
+  ]
+}
