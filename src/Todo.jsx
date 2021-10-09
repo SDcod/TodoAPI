@@ -6,12 +6,15 @@ const Todo = () => {
   const { id, Todoid, Todotitle } = useParams();
 
   const [todoDetails, setTodoDetails] = useState([]);
-
+  const [todoList, setTodoList] = useState([]);
   {
     useEffect(() => {
       axios.get(`https://jsonplaceholder.typicode.com/users/`).then((res) => {
         const responseTodos = res.data;
         setTodoDetails(responseTodos);
+      });
+      axios.get(`https://jsonplaceholder.typicode.com/todos`).then((res) => {
+        setTodoList(res.data);
       });
     }, []);
   }
@@ -20,6 +23,7 @@ const Todo = () => {
     <div className='todo-user'>
       {todoDetails.length > 0
         ? todoDetails
+
             .filter((detail) => detail.id == id)
             .map((detail) => (
               <li
@@ -31,7 +35,18 @@ const Todo = () => {
                 </p>
                 <br />
                 <p>
-                  <span>Todo Title :</span> {Todotitle}
+                  <span>Todo Title :</span>
+                  {todoList
+                    .filter((list) => list.userId == detail.id)
+                    .map((todo) => {
+                      return (
+                        <p>
+                          <strong>{todo.id} </strong>
+                          <br />
+                          {todo.title}
+                        </p>
+                      );
+                    })}
                 </p>
                 <br />
                 <p>

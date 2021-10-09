@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { useHistory } from "react-router";
-
+import { useHistory, Route } from "react-router";
+import Todo from "./Todo";
 export const Todos = () => {
   const [todos, setTodos] = useState([]);
   const [searchTerm, setSearchterm] = useState("");
@@ -34,7 +34,7 @@ export const Todos = () => {
       setTodos(res.data);
     });
   }, []);
-
+  <Todo todoTitle='hello' />;
   return (
     <div className='list-section'>
       <div className='list-header'>
@@ -91,6 +91,7 @@ export const Todos = () => {
                       <tr className='table-data'>
                         <td>{todo.id}</td>
                         <td>{todo.title}</td>
+
                         <td>{todo.completed ? "completed" : "incomplete"}</td>
                         <td>
                           <button

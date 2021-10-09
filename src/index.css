@@ -38,8 +38,10 @@ code {
 .todo-user {
   position: fixed;
   right: 6rem;
-  margin-top: 8.8rem;
-  width: 30vw;
+  margin-top: 2rem;
+  overflow-y: scroll;
+  max-width: 30vw;
+  max-height: 90vh;
 }
 .user-detail-container {
   min-width: 300px;
